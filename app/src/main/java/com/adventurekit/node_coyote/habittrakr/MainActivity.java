@@ -23,7 +23,8 @@ public class MainActivity extends AppCompatActivity {
     /**
      * Reads a from the rows of habit objects in the database
      */
-    private void readHabit() {
+    private Cursor readHabit(int id) {
+
         // Create or open a database, then read from it
         SQLiteDatabase db = mHelper.getReadableDatabase();
 
@@ -68,6 +69,7 @@ public class MainActivity extends AppCompatActivity {
             // Clean the dishes
             cursor.close();
         }
+        return cursor;
     }
 
     /**
