@@ -10,7 +10,10 @@ import android.database.sqlite.SQLiteOpenHelper;
 
 public class TrakrDatabaseHelper extends SQLiteOpenHelper {
 
-    private static final String DATABASE_NAME = "";
+    // Name of the actual database file
+    private static final String DATABASE_NAME = "trakr.db";
+
+    // Database version. If schema changes, this number should be incremented
     private static final int DATABASE_VERSION = 1;
 
     /**
